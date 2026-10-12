@@ -14,7 +14,9 @@ export default defineConfig({
   webServer: {
     command: 'npm run dev',
     url: 'http://127.0.0.1:4317',
-    reuseExistingServer: false,
+    // Stay false unless a startup script already owns the port. A stray process
+    // on 4317 must not be treated as this app.
+    reuseExistingServer: process.env.KAMAI_REUSE_SERVER === '1',
     timeout: 120_000,
   },
   projects: [
