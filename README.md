@@ -116,6 +116,22 @@ Launch through rider hubs and an EV dealer network in Pune, with the Passport bu
 | Phase 2 | Lender API, Hindi and Marathi, more lenders and rentals, 5 cities | Q1 2027 |
 | Later | Evidence upload, platform partnerships, Passport refresh | H2 2027 |
 
+## Run the demo
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://127.0.0.1:4317. The sample statement is on SBI ··4521. The demo bank OTP is `481063`.
+
+```bash
+npm test
+npm run test:e2e
+```
+
+`npm test` checks income maths, stability bands, sharing rules, and the PDF. `npm run test:e2e` runs the functional journeys and the regression suite (layout, contrast, tap targets, Hindi, Marathi, and the verifier page).
+
 ## Company bet
 
 Become the trusted income layer for India’s new-to-credit workforce. The gig workforce is scaling fast (NITI Aayog: 7.7M workers in 2020–21, projected 23.5M by 2029–30). Account Aggregator rails are live across major banks, so consented bank data is available today without platform deals.
